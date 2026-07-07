@@ -10,7 +10,14 @@
       "Bash(git init *)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "WebFetch(domain:jwglxt1.qust.edu.cn)",
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "Bash(pip list *)",
+      "Bash(\"/c/Program Files/Tesseract-OCR/tesseract.exe\" --list-langs)",
+      "Bash(curl *)",
+      "Bash(KMP_DUPLICATE_LIB_OK=TRUE python -c ' *)"
     ]
   }
 }
