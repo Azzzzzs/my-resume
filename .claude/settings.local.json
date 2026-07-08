@@ -17,7 +17,11 @@
       "Bash(pip list *)",
       "Bash(\"/c/Program Files/Tesseract-OCR/tesseract.exe\" --list-langs)",
       "Bash(curl *)",
-      "Bash(KMP_DUPLICATE_LIB_OK=TRUE python -c ' *)"
+      "Bash(KMP_DUPLICATE_LIB_OK=TRUE python -c ' *)",
+      "Bash(git remote *)",
+      "Bash(start https://github.com/Azzzzzs/my-resume)",
+      "Bash(start \"\" \"D:\\\\Python\\\\pythonProject2\\\\.venv\\\\1\\\\简历\\\\index.html\")",
+      "Bash(start \"\" \"D:\\\\Python\\\\pythonProject2\\\\.venv\\\\1\\\\简历\\\\index_面试版.html\")"
     ]
   }
 }

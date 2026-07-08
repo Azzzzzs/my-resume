@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魏鑫浩 - 个人简历（面试版）</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --accent: #3182ce;
+            --text: #2d3748;
+            --text-light: #4a5568;
+            --border: #e2e8f0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #edf2f7;
+            color: var(--text);
+            line-height: 1.65;
+            padding: 20px;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        /* ===== Header ===== */
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2c5282);
+            color: #fff;
+            padding: 24px 36px;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+        .header .photo {
+            width: 90px; height: 115px;
+            border-radius: 6px;
+            object-fit: cover;
+            border: 2px solid rgba(255,255,255,0.3);
+            flex-shrink: 0;
+        }
+        .header h1 { font-size: 26px; font-weight: 700; letter-spacing: 1px; }
+        .header .sub { font-size: 14px; opacity: 0.9; margin: 4px 0 6px; }
+        .header .sub span { margin-right: 14px; }
+        .header .contact { font-size: 13px; opacity: 0.85; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+        .header .contact a { color: #bee3f8; text-decoration: none; }
+
+        /* ===== Section ===== */
+        .section { padding: 16px 36px; border-bottom: 1px solid var(--border); }
+        .section:last-child { border-bottom: none; }
+        .sec-title {
+            font-size: 17px; font-weight: 700; color: var(--primary);
+            padding-bottom: 6px; border-bottom: 2px solid var(--accent); margin-bottom: 10px;
+            display: flex; align-items: center; gap: 8px;
+        }
+
+        /* ===== Row layout ===== */
+        .row { display: flex; gap: 18px; }
+        .col { flex: 1; }
+
+        /* ===== Education ===== */
+        .edu-line { font-size: 14px; margin-bottom: 4px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .edu-line .strong { font-weight: 600; }
+        .edu-line .gray { color: var(--text-light); font-size: 13px; }
+
+        /* ===== Tags ===== */
+        .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+        .tag {
+            padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 500;
+            background: #e6fffa; color: #234e52; border: 1px solid #b2f0e3;
+        }
+        .tag.mech { background: #fef5e7; color: #7b4f1d; border: 1px solid #f6e4c3; }
+        .tag.ai { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+
+        /* ===== Project ===== */
+        .proj { margin-bottom: 12px; }
+        .proj:last-child { margin-bottom: 0; }
+        .proj-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .proj-header .name { font-size: 15px; font-weight: 600; }
+        .proj-header .role { font-size: 13px; color: var(--accent); font-weight: 500; margin-left: 6px; }
+        .proj-header .time { font-size: 12px; color: var(--text-light); }
+        .proj ul { font-size: 13px; color: var(--text-light); padding-left: 14px; margin-top: 3px; }
+        .proj li { margin-bottom: 2px; }
+        .proj li::marker { color: var(--accent); }
+
+        /* ===== Awards table ===== */
+        .award-tbl { width: 100%; font-size: 13px; border-collapse: collapse; margin-top: 6px; }
+        .award-tbl td { padding: 3px 10px 3px 0; vertical-align: top; }
+        .award-tbl .lvl { font-weight: 600; color: var(--accent); white-space: nowrap; width: 70px; }
+        .award-tbl .award-name { color: var(--text); }
+        .award-tbl .award-detail { color: var(--text-light); font-size: 12px; }
+
+        /* ===== Misc ===== */
+        .campus-item { margin-bottom: 6px; }
+        .campus-header { display: flex; justify-content: space-between; font-size: 14px; }
+        .campus-header .name { font-weight: 600; }
+        .campus-header .time { font-size: 12px; color: var(--text-light); }
+        .campus-desc { font-size: 13px; color: var(--text-light); padding-left: 10px; margin-top: 2px; }
+        .self-text { font-size: 13px; color: var(--text-light); line-height: 1.75; text-align: justify; }
+        .sub-label { font-size: 14px; font-weight: 600; color: var(--text); margin: 8px 0 4px; }
+
+        /* ===== Print ===== */
+        @media print {
+            body { background: #fff; padding: 0; }
+            .page { box-shadow: none; max-width: 100%; }
+            .section { padding: 10px 32px; }
+            .header { padding: 18px 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- ==================== 头部 ==================== -->
+    <div class="header">
+        <img class="photo" src="魏鑫浩.jpg" alt="魏鑫浩">
+        <div>
+            <h1>魏鑫浩</h1>
+            <div class="sub">
+                <span>青岛科技大学 · 机械工程（本科）</span>
+                <span>辅修 人工智能</span>
+            </div>
+            <div class="contact">
+                <span>19560707523</span>
+                <span>202587244@qq.com</span>
+                <span>山东·青岛</span>
+                <span>共青团员</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 教育背景与修读课程 ==================== -->
+    <div class="section">
+        <div class="sec-title">教育背景</div>
+        <div class="edu-line">
+            <span><span class="strong">青岛科技大学</span> · 机械工程 本科 · 辅修 人工智能</span>
+            <span class="gray">2023.09 — 2027.06（预计）</span>
+        </div>
+        <div class="edu-line gray" style="margin-bottom:10px;">
+            <span>GPA：3.0 / 5.0</span>
+            <span>英语：CET-4</span>
+        </div>
+        <div class="sub-label">机械核心课程</div>
+        <div class="tags">
+            <span class="tag mech">机械制图</span><span class="tag mech">材料力学</span><span class="tag mech">机械原理</span><span class="tag mech">机械设计</span><span class="tag mech">机械制造基础</span><span class="tag mech">机械加工工艺</span><span class="tag mech">特种加工</span><span class="tag mech">液压传动</span><span class="tag mech">控制工程基础</span><span class="tag mech">工程材料</span><span class="tag mech">数控技术</span>
+        </div>
+        <div class="sub-label">人工智能（辅修）</div>
+        <div class="tags">
+            <span class="tag ai">Python</span><span class="tag ai">机器学习</span><span class="tag ai">深度学习</span><span class="tag ai">计算机视觉</span><span class="tag ai">NLP</span><span class="tag ai">数学建模</span><span class="tag ai">数据可视化</span><span class="tag ai">大模型应用</span>
+        </div>
+    </div>
+
+    <!-- ==================== 专业技能 ==================== -->
+    <div class="section">
+        <div class="sec-title">专业技能</div>
+        <div class="tags">
+            <span class="tag mech">AutoCAD / SolidWorks</span><span class="tag mech">PLC 编程</span><span class="tag mech">MATLAB</span><span class="tag mech">有限元分析</span><span class="tag mech">数控编程</span><span class="tag ai">Python</span><span class="tag ai">计算机视觉</span><span class="tag ai">机器学习 / 深度学习</span>
+        </div>
+    </div>
+
+    <!-- ==================== 项目经历 ==================== -->
+    <div class="section">
+        <div class="sec-title">项目经历（机械 × 人工智能交叉）</div>
+
+        <div class="proj">
+            <div class="proj-header">
+                <div>
+                    <span class="name">冰雪智藏阁 —— 智能存放分拣取出食物冰柜</span>
+                    <span class="role">负责人</span>
+                </div>
+                <span class="time">2024.10 — 至今</span>
+            </div>
+            <ul>
+                <li>使用 SolidWorks 完成整机三维建模与装配设计，涵盖机械爪导轨抓取系统、保鲜膜自动包裹装置（双齿链传动+蜗杆自锁）、自升降储存机构等全部机械结构</li>
+                <li>基于 Faster R-CNN + FPN 构建果蔬检测模型，使用 VegFru / FruitVeg-81 数据集训练，引入二次分类网络解决相似品类（如青柠 vs 青橘）混淆问题，完成从数据标注到模型部署的全流程</li>
+                <li>集成语音识别门控与手机 APP 远程监控，实现腐烂食物自动分拣与智能保鲜，单日节电约 0.9 度</li>
+            </ul>
+        </div>
+
+        <div class="proj">
+            <div class="proj-header">
+                <div>
+                    <span class="name">一体式智能种苗移栽机</span>
+                    <span class="role">视觉导航负责人</span>
+                </div>
+                <span class="time">2025</span>
+            </div>
+            <ul>
+                <li>负责双目视觉导航系统开发，实现实时图像采集（10-30fps）、路径识别与动态障碍物检测，支撑移栽机自主循迹行驶</li>
+                <li>设计 AWB + 中值滤波 + 动态阈值组合的预处理方案，针对覆膜/污染膜等不同场景优化图像分割，识别准确率从 52~78% 提升至 87~98%</li>
+                <li>采用 Canny 边缘检测 + 直线检测拟合定位覆膜边界与偏移量，结合场景判定实现鲁棒性路径规划</li>
+            </ul>
+        </div>
+
+        <div class="proj">
+            <div class="proj-header">
+                <div>
+                    <span class="name">轻舟 —— 浅水域智能巡检作业机器人</span>
+                    <span class="role">负责人</span>
+                </div>
+                <span class="time">2024.06 — 至今</span>
+            </div>
+            <ul>
+                <li>负责整体方案设计与仿生流线型碳纤维机身建模，采用五推进器矢量驱动架构实现 360° 全向运动</li>
+                <li>构建改进暗通道先验（DCP）图像复原模型，有效解决低能见度水下图像退化问题，提升目标可辨识度</li>
+                <li>基于轻量化 YOLOv8 构建水下目标检测系统，实现缺陷、障碍物与生物目标的精准识别</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==================== 获奖情况（精简） ==================== -->
+    <div class="section">
+        <div class="sec-title">获奖情况（17项：国家级4项 + 省级13项）</div>
+        <table class="award-tbl">
+            <tr>
+                <td class="lvl">国家级</td>
+                <td>
+                    中国高校智能机器人创意大赛 <strong>二等奖</strong>（负责人）&nbsp;|&nbsp;
+                    国际大学生智能农业装备创新大赛 <strong>二等奖</strong>&nbsp;|&nbsp;
+                    中国机器人及人工智能大赛 <strong>三等奖</strong>（负责人）&nbsp;|&nbsp;
+                    全国大学生节能减排竞赛 <strong>三等奖</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="lvl">省级</td>
+                <td>
+                    智能机器人创意大赛（一/二等奖3项）· 节能减排竞赛（一/三等奖2项）· 山东省科技节（一/二等奖2项）· 机械创新设计大赛（二等奖）· iCAN创新创业大赛 · 创客大赛 · 创新方法大赛 · 中国机器人及人工智能大赛 等<strong>13项</strong>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ==================== 实践与实习经历 ==================== -->
+    <div class="section">
+        <div class="sec-title">实践与实习经历</div>
+        <div class="campus-item">
+            <div class="campus-header">
+                <span class="name">金工实习</span>
+            </div>
+            <div class="campus-desc">掌握车、铣、刨、磨、钳等传统机加工操作，并学习数控编程、加工中心操作及电火花、激光切割等特种加工技术</div>
+        </div>
+        <div class="campus-item">
+            <div class="campus-header">
+                <span class="name">先进制造技术实践</span>
+            </div>
+            <div class="campus-desc">学习摩擦学基本原理与表面工程检测技术，完成摩擦磨损实验操作与数据分析</div>
+        </div>
+        <div class="campus-item">
+            <div class="campus-header">
+                <span class="name">志愿服务</span>
+            </div>
+            <div class="campus-desc">积极参与社区志愿服务活动，获评 2024 年度优秀青年志愿者</div>
+        </div>
+    </div>
+
+    <!-- ==================== 校园经历与荣誉 ==================== -->
+    <div class="section">
+        <div class="sec-title">校园经历与荣誉</div>
+        <div class="campus-item">
+            <div class="campus-header">
+                <span class="name">团委科创部赛事部部长</span>
+                <span class="time">2024 — 至今</span>
+            </div>
+            <div class="campus-desc">负责学院科技创新竞赛的组织统筹、宣传推广及参赛团队申报协调工作</div>
+        </div>
+        <div class="campus-item">
+            <div class="campus-header">
+                <span class="name">奖学金</span>
+            </div>
+            <div class="campus-desc">
+                校三等奖学金 &nbsp;|&nbsp; 社会实践奖学金 &nbsp;|&nbsp; 文体优秀奖学金
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 自我评价 ==================== -->
+    <div class="section">
+        <div class="sec-title">自我评价</div>
+        <p class="self-text">
+            机械工程专业在读本科生，具备扎实的机械设计与制造基础，熟练掌握 SolidWorks 三维建模与 AutoCAD 工程图绘制，同时辅修人工智能方向并系统学习了深度学习、计算机视觉等技术，能够将机械设计与视觉算法结合解决实际工程问题。先后参与<strong>"冰雪智藏阁"智能分拣冰柜</strong>、<strong>"一体式智能种苗移栽机"</strong>和<strong>"轻舟"水下巡检机器人</strong>三个竞赛项目，涵盖整机建模、视觉检测与图像复原等方向，累计获<strong>国家级奖项4项、省级13项</strong>。担任团委科创部赛事部部长，具备良好的组织协调与团队管理能力；积极参加志愿服务并获评优秀青年志愿者，热爱乒乓球等体育运动。对智能机器人、工业视觉、机电一体化等交叉方向有浓厚兴趣，希望继续深造。
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
