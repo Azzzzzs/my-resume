@@ -21,7 +21,11 @@
       "Bash(git remote *)",
       "Bash(start https://github.com/Azzzzzs/my-resume)",
       "Bash(start \"\" \"D:\\\\Python\\\\pythonProject2\\\\.venv\\\\1\\\\简历\\\\index.html\")",
-      "Bash(start \"\" \"D:\\\\Python\\\\pythonProject2\\\\.venv\\\\1\\\\简历\\\\index_面试版.html\")"
+      "Bash(start \"\" \"D:\\\\Python\\\\pythonProject2\\\\.venv\\\\1\\\\简历\\\\index_面试版.html\")",
+      "Bash(git reset *)",
+      "Bash(rm -f \"index_面试版.html.tmp.\"*)",
+      "Bash(git push *)",
+      "Bash(git rm *)"
     ]
   }
 }
